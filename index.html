@@ -5,61 +5,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodrigo De Lascio | Software Developer</title>
-    <link rel="icon" type="image/x-icon" href="./images/logo/rod_logo_offWhite.png">
+    <title>Rodrigo De Lascio&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Software Developer</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo/rodLogoWhite.png">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <!-- Start -->
+
+    <!-- Nav menu  -->
     <header class="grid">
-        <a href="#"><img src="./images/logo/rod_logo_offWhite.png" alt="Homepage | Rodrigo de Lascio" id="logo"></a>
+        <a href="#"><img src="./images/logo/rodLogoWhite.png" alt="Homepage | Rodrigo de Lascio" id="logo"></a>
         <nav>
             <ul>
                 <a href="#">about</a>
+                <a href="#">skills</a>
                 <a href="#">projects</a>
                 <a href="#">contact</a>
             </ul>
         </nav>
     </header>
 
+    <!-- Social media links -->
     <div class="socials">
         <ul>
             <li>
                 <a href="https://www.linkedin.com/in/rodrigo-de-lascio-1a5330a1/" target="_blank"
-                    rel="noopener noreferrer"><img src="./images/socials/linkedin.png" alt="LinkedIn"></a>
+                    rel="noopener noreferrer" id="linkedIn"><img src="./images/socials/linkedinWhite.png"
+                        alt="LinkedIn"></a>
             </li>
 
             <li>
-                <a href="https://github.com/rodrigodelascio" target="_blank" rel="noopener noreferrer"><img
-                        src="./images/socials/github.png" alt="GitHub"></a>
+                <a href="https://github.com/rodrigodelascio" target="_blank" rel="noopener noreferrer" id="gitHub"><img
+                        src="./images/socials/githubWhite.png" alt="GitHub"></a>
             </li>
         </ul>
+
+        <div class="verticalLine"></div>
     </div>
 
-    <main class="grid">
+    <main>
 
-        <div class="mainLanding">
+        <!-- Main landing secion -->
+        <div id="mainLanding">
             <h1>Rodrigo de Lascio</h1>
-            <h2>Front-End Developer</h2>
-            <h3>Let's work together</h3>
+            <h2>Software Developer</h2>
+            <h3>I build things for the web,
+                <br>let's work together
+            </h3>
             <button>contact</button>
+
+            <div id="scrolldown"></div>
         </div>
 
-        <div class="about">
-            <h2>&#60;about /&#62;</h2>
+        <!-- About Me and Skills container -->
+        <div id="aboutSection" class="grid">
+
+            <!-- About section -->
+            <div id="aboutContainer">
+                <h2>&#60;about /&#62;</h2>
+
+                <div id="aboutMeText">
+                    Hello, my name is Rodrigo de Lascio. I am a Software Developer, who recently attended a intense
+                    bootcamp at Just IT, to prepare myself
+                </div>
+            </div>
+
         </div>
 
-        <div class="projects">
+        <!-- Skills section -->
+        <div id="skillsSection">
+
+
+            <div id="skillsContainer">
+                <h2>&#60;skills /&#62;</h2>
+
+                <div class="skillIcons">
+                    <img src="./images/skills/html5.png" alt="">
+                    <img src="./images/skills/css3.png" alt="">
+                    <img src="./images/skills/javascript.png" alt="">
+                </div>
+
+                <div class="skillIcons">
+                    <img src="./images/skills/python.png" alt="">
+                    <img src="./images/skills/mysql.png" alt="">
+                    <img src="./images/skills/mongodb.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- My projects section -->
+        <div id="projectsSection" class="grid">
+
+        <div id="projects">
             <h2>&#60;projects /&#62;</h2>
+
+            <div class="projImages">
+                <img src="./images/mockups/rodWeatherMockup.png" alt="">
+            </div>
         </div>
+
+        </div>
+
     </main>
 
-    <footer class="grid">
-        <div id="copyright">&#169; 2022 by Rodrigo de Lascio</div>
+    <!-- Footer section -->
 
+    <footer class="grid">
+
+        <div id="copyright">&#169; 2022 by Rodrigo de Lascio&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Software Developer
+        </div>
 
     </footer>
 
+    <!-- End -->
     <script src="./script.js"></script>
 </body>
 
