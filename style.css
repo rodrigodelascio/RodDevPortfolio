@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* Document formatting start */
+
 html {
     font-size: 15px;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -26,6 +29,10 @@ footer {
     gap: 0.75rem;
 }
 
+.anchor {
+    scroll-margin-top: 5rem;
+}
+
 body {
     margin-top: 0.7rem;
     margin-left: 0;
@@ -34,6 +41,10 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #1e1e1e;
 }
+
+/* Document formatting end */
+
+/* Nav bar starts */
 
 header {
     padding: 1rem;
@@ -47,8 +58,6 @@ header {
     z-index: 9;
 }
 
-/* logo transition starts */
-
 #logo {
     grid-column: 1 / span 6;
     width: 3rem;
@@ -61,7 +70,6 @@ header {
     width: 3rem;
 }
 
-/* logo transition ends */
 
 header nav {
     grid-column: 7 / span 6;
@@ -83,6 +91,10 @@ header nav a:hover {
     text-underline-offset: 0.8rem;
 }
 
+/* Nav bar ends */
+
+/* Social media section starts */
+
 .socials {
     position: fixed;
     margin-left: 10px;
@@ -92,34 +104,39 @@ header nav a:hover {
 
 .socials ul {
     list-style: none;
-    padding: 0.5rem;
+    padding: 1rem;
     line-height: 2.5rem;
+    margin-bottom: 105px;
 }
 
 .socials img {
-    width: 3rem;
+    width: 2rem;
     transition: all 0.2s ease-in-out;
 }
 
 #gitHub:hover {
     cursor: pointer;
-    content: url(./images/socials/githubGreen.png);
-    width: 3rem;
+    content: url(./images/socials/github_green.png);
+    width: 2rem;
 }
 
 #linkedIn:hover {
     cursor: pointer;
-    content: url(./images/socials/linkedinGreen.png);
-    width: 3rem;
+    content: url(./images/socials/linkedin_green.png);
+    width: 2rem;
 }
 
 .verticalLine {
     border-left: 0.1rem solid #FAF9F6;
-    height: 170px;
+    height: 270px;
     position: absolute;
     bottom: -150px;
     left: 29px;
 }
+
+/* Social media section ends */
+
+/* Main landing starts */
 
 main {
     padding: 1.5rem;
@@ -144,6 +161,7 @@ main {
 #mainLanding h2 {
     color: #FAF9F6;
     margin-top: -2rem;
+    opacity: 100%;
 }
 
 #mainLanding h3 {
@@ -227,6 +245,10 @@ main {
 
 /* scrolldown icon ends */
 
+/* Main landing ends */
+
+/* About section starts */
+
 #aboutSection {
     color: #FAF9F6;
     height: 40rem;
@@ -240,6 +262,33 @@ main {
 #aboutMeText {
     letter-spacing: 0.02rem;
 }
+
+#profilePicContainer {
+    grid-column: 7 / span 6;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #64ffda;
+    justify-self: center;
+    margin-top: 5rem;
+}
+
+#profilePic {
+    height: 100%;
+    width: 100%;
+    transform: scaleX(-1);
+    object-fit: contain;
+    opacity: 40%;
+}
+
+#profilePic:hover {
+    opacity: 100%;
+}
+
+/* About section ends */
+
+/* Skills section starts */
 
 #skillsSection {
     color: #FAF9F6;
@@ -261,25 +310,147 @@ main {
     height: 3rem;
 }
 
+/* Skills section ends */
+
+/* Projects section starts */
+
 #projectsSection {
     color: #FAF9F6;
-    height: 40rem;
+    margin-right: 5rem;
+    margin-bottom: 10rem;
 }
 
-#projects {
+#projectsSection h2 {
+    grid-column: span 12;
+}
+
+#rodWeatherImgContainer {
     grid-column: 1 / span 6;
-
 }
 
-.projImages img {
-    max-width: 70%;
+#rodWeatherImgContainer img {
+    width: 85%;
 }
+
+#rodWeatherDescContainer {
+    grid-column: 7 / span 6;
+    align-self: center;
+}
+
+#rodWeatherDescContainer img {
+    width: 40%
+}
+
+.projSkills {
+    font-size: 0.8rem;
+}
+
+/* Projects section ends */
+
+/* Contact section starts */
+
+#contactSection {
+    margin-right: 5rem;
+}
+
+#contactSection h2 {
+    grid-column: 1 / span 12;
+    color: #FAF9F6;
+    justify-self: center;
+}
+
+/* Contact form starts */
+
+#contactForm {
+    grid-column: 4 / span 6;
+    background: #faf9f616;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.formGroup {
+    color: #FAF9F6;
+}
+
+.inpGroup {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.formControl {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.3rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #1e1e1e;
+    background-color: #FAF9F6;
+    background-clip: padding-box;
+    outline: none;
+    border-radius: 5px;
+    transition: border-color 0.15s ease-in-out
+}
+
+.formControl:focus {
+    border-bottom: 4px solid #64ffda;
+    border-right: 4px solid #64ffda;
+}
+
+textarea.formControl {
+    height: auto;
+}
+
+label.inpLabel {
+    display: inline-block;
+    margin-bottom: 0.1rem;
+    margin-top: 0.4rem;
+}
+
+#messageArea {
+    resize: none;
+}
+
+.btnBlock {
+    display: block;
+    width: 40%;
+    margin-left: 60%;
+}
+
+#formButton {
+    margin-top: 2rem;
+    height: 3rem;
+    border: #64ffda 0.1rem solid;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #64ffda;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#formButton:hover {
+    background-color: #64ffda;
+    color: #1e1e1e;
+    cursor: pointer;
+}
+
+input[type="submit"].btnBlock, input[type="reset"].btnBlock, input[type="button"].btnBlock {
+    width: 100%;
+}
+
+/* Contact form ends */
+
+/* Footer secion starts */
 
 footer {
     border-top: #FAF9F6 solid 2px;
+    margin-top: 5rem;
     background: #1e1e1e;
     width: 100%;
-    height: 3.5rem;
     z-index: 8;
     position: absolute;
 }
@@ -290,3 +461,43 @@ footer {
     padding: 0.8rem;
     justify-self: center;
 }
+
+#supermanIcon {
+    grid-column: 1 / span 12;
+    justify-self: center;
+    margin-bottom: 3rem;
+}
+
+#supermanIcon img {
+    height: 4rem;
+}
+
+#supermanIcon:hover {
+    cursor: pointer;
+    opacity: 60%;
+}
+
+#upAndAway {
+    color: #FAF9F6;
+    font-size: 0.6rem;
+}
+
+#upAndAway {
+    visibility: hidden;
+    white-space: nowrap;
+    position: absolute;
+    transform: translateX(-47.4%);
+    left: 50%;
+    bottom: 15%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#supermanIcon:hover > #upAndAway {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Footer secion ends */
+
+/* End */
