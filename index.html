@@ -18,10 +18,10 @@
         <a href="#"><img src="./images/logo/rodLogoWhite.png" alt="Homepage | Rodrigo de Lascio" id="logo"></a>
         <nav>
             <ul>
-                <a href="#">about</a>
-                <a href="#">skills</a>
-                <a href="#">projects</a>
-                <a href="#">contact</a>
+                <a href="#aboutSection">about</a>
+                <a href="#skillsSection">skills</a>
+                <a href="#projectsSection">projects</a>
+                <a href="#contactSection">contact</a>
             </ul>
         </nav>
     </header>
@@ -31,13 +31,13 @@
         <ul>
             <li>
                 <a href="https://www.linkedin.com/in/rodrigo-de-lascio-1a5330a1/" target="_blank"
-                    rel="noopener noreferrer" id="linkedIn"><img src="./images/socials/linkedinWhite.png"
+                    rel="noopener noreferrer" id="linkedIn"><img src="./images/socials/linkedin_white.png"
                         alt="LinkedIn"></a>
             </li>
 
             <li>
                 <a href="https://github.com/rodrigodelascio" target="_blank" rel="noopener noreferrer" id="gitHub"><img
-                        src="./images/socials/githubWhite.png" alt="GitHub"></a>
+                        src="./images/socials/github_white.png" alt="GitHub"></a>
             </li>
         </ul>
 
@@ -53,13 +53,15 @@
             <h3>I build things for the web,
                 <br>let's work together
             </h3>
-            <button>contact</button>
+            <a href="#contactSection">
+                <button>contact</button>
+            </a>
 
             <div id="scrolldown"></div>
         </div>
 
         <!-- About Me and Skills container -->
-        <div id="aboutSection" class="grid">
+        <div id="aboutSection" class="grid anchor">
 
             <!-- About section -->
             <div id="aboutContainer">
@@ -71,11 +73,14 @@
                 </div>
             </div>
 
+            <div id="profilePicContainer">
+                <img src="./images/profile/Rod_Snow_Square.png" alt="" id="profilePic">
+            </div>
+
         </div>
 
         <!-- Skills section -->
-        <div id="skillsSection">
-
+        <div id="skillsSection" class="grid anchor">
 
             <div id="skillsContainer">
                 <h2>&#60;skills /&#62;</h2>
@@ -96,16 +101,78 @@
         </div>
 
         <!-- My projects section -->
-        <div id="projectsSection" class="grid">
+        <div id="projectsSection" class="grid anchor">
 
-        <div id="projects">
             <h2>&#60;projects /&#62;</h2>
 
-            <div class="projImages">
+            <!-- RodWeather Project -->
+
+            <div id="rodWeatherImgContainer">
+
                 <img src="./images/mockups/rodWeatherMockup.png" alt="">
+
             </div>
+
+            <div id="rodWeatherDescContainer">
+
+                <p style="color: #64ffda;">Featured project</p>
+
+                <img src="./images/mockups/rodWeatherLogo.png" alt="">
+
+                <p>
+                    A weather app built pulling data different APIs, featuring <span style="color: #64ffda;">geolocation
+                        and autocomplete functionalities</span>, displaying background images related to the weather
+                    location.
+                </p>
+
+
+                <p style="color: #64ffda;" class="projSkills">
+                    HTML5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OpenWeather
+                    API&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Geo DB Cities API&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unsplash API</p>
+
+            </div>
+
         </div>
 
+        <!-- Contact section -->
+
+        <div id="formBackground">
+
+            <div id="contactSection" class="grid anchor">
+
+                <h2>&#60;contact /&#62;</h2>
+
+                <!-- Contact form -->
+                <form id="contactForm" class="formClass" method="post" action="" autocomplete="off">
+
+                    <div class="formGroup">
+                        <label for="Name" class="inpLabel">Name</label>
+                        <div class="inpGroup">
+                            <input type="text" id="Name" name="Name" class="formControl" required>
+                        </div>
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="Email" class="inpLabel">Email address</label>
+                        <div class="inpGroup">
+                            <input type="email" id="Email" name="Email" class="formControl" required>
+                        </div>
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="messageArea" class="inpLabel">Message</label>
+                        <div class="inpGroup">
+                            <textarea id="messageArea" name="messageArea" class="formControl" rows="6" maxlength="3000"
+                                required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="formGroup">
+                        <button type="submit" id="formButton" class="btnBlock">send message</button>
+                    </div>
+
+                </form>
+            </div>
         </div>
 
     </main>
@@ -115,6 +182,11 @@
     <footer class="grid">
 
         <div id="copyright">&#169; 2022 by Rodrigo de Lascio&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Software Developer
+        </div>
+
+        <div id="supermanIcon">
+            <a href="#"><img src="./images/icons/supermanIcon.png" alt=""></a>
+            <span id="upAndAway"><br>Up, up, and away!</span>
         </div>
 
     </footer>
