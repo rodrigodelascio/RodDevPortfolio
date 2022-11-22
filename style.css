@@ -106,7 +106,7 @@ header nav a:hover {
     list-style: none;
     padding: 1rem;
     line-height: 2.5rem;
-    margin-bottom: 105px;
+    margin-bottom: 35px;
 }
 
 .socials img {
@@ -128,7 +128,7 @@ header nav a:hover {
 
 .verticalLine {
     border-left: 0.1rem solid #FAF9F6;
-    height: 270px;
+    height: 200px;
     position: absolute;
     bottom: -150px;
     left: 29px;
@@ -178,6 +178,7 @@ main {
     font-size: 1rem;
     letter-spacing: 0.1rem;
     transition: all 0.2s ease-in-out;
+    margin-right: 1rem;
 }
 
 #mainLanding button:hover {
@@ -256,11 +257,12 @@ main {
 
 #aboutContainer {
     grid-column: 1 / span 6;
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 #aboutMeText {
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.01rem;
+    line-height: 1.8rem;
 }
 
 #profilePicContainer {
@@ -279,11 +281,12 @@ main {
     width: 100%;
     transform: scaleX(-1);
     object-fit: contain;
-    opacity: 40%;
+    opacity: 100%;
+    mix-blend-mode: multiply;
 }
 
 #profilePic:hover {
-    opacity: 100%;
+    mix-blend-mode: normal;
 }
 
 /* About section ends */
@@ -447,9 +450,9 @@ input[type="submit"].btnBlock, input[type="reset"].btnBlock, input[type="button"
 /* Footer secion starts */
 
 footer {
-    border-top: #FAF9F6 solid 2px;
-    margin-top: 5rem;
-    background: #1e1e1e;
+    /* border-top: #FAF9F6 solid 2px; */
+    margin-top: 10rem;
+    /* background: #1e1e1e; */
     width: 100%;
     z-index: 8;
     position: absolute;
@@ -474,7 +477,7 @@ footer {
 
 #supermanIcon:hover {
     cursor: pointer;
-    opacity: 60%;
+    opacity: 70%;
 }
 
 #upAndAway {
@@ -488,7 +491,7 @@ footer {
     position: absolute;
     transform: translateX(-47.4%);
     left: 50%;
-    bottom: 15%;
+    bottom: 17%;
     opacity: 0;
     transition: opacity 1s ease;
 }
