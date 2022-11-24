@@ -111,7 +111,6 @@ header nav a:hover {
 
 .socials img {
     width: 2rem;
-    transition: all 0.2s ease-in-out;
 }
 
 #gitHub:hover {
@@ -293,6 +292,10 @@ main {
     width: 75%;
 }
 
+#rodWeatherImgContainer img:hover {
+    opacity: 80%;
+}
+
 #rodWeatherDescContainer {
     grid-column: 7 / span 6;
     align-self: center;
@@ -302,8 +305,36 @@ main {
     width: 40%
 }
 
+#rodWeatherDescContainer img:hover {
+    opacity: 80%;
+}
+
 .projSkills {
     font-size: 0.8rem;
+}
+
+.weatherIcons {
+    margin-top: 1rem;
+}
+
+.fa-arrow-up-right-from-square {
+    font-size: 1.5rem;
+}
+
+.fa-github-alt {
+    font-size: 1.7rem;
+}
+
+.fa-arrow-up-right-from-square:hover {
+    color: #64ffda;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.fa-github-alt:hover {
+    color: #64ffda;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
 }
 
 #rodFlixDescContainer {
@@ -318,6 +349,9 @@ main {
     margin-top: -1.5rem;
 }
 
+#rodFlixDescContainer img:hover {
+    opacity: 80%;
+}
 
 #rodFlixImgContainer {
     grid-column: 7 / span 6;
@@ -328,6 +362,10 @@ main {
     width: 75%;
     display: flex;
     float: right;
+}
+
+#rodFlixImgContainer img {
+    opacity: 80%;
 }
 
 
