@@ -59,7 +59,7 @@ header {
 }
 
 #logo {
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 5;
     width: 3rem;
     margin-left: 5rem;
 }
@@ -72,7 +72,7 @@ header {
 
 
 header nav {
-    grid-column: 7 / span 6;
+    grid-column: 6 / span 7;
     justify-self: right;
     margin-right: 5rem;
 }
@@ -91,6 +91,24 @@ header nav a:hover {
     text-underline-offset: 0.8rem;
 }
 
+header button {
+    width: 8rem;
+    height: 2.5rem;
+    border: #64ffda 0.1rem solid;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #64ffda;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    transition: all 0.2s ease-in-out;
+}
+
+header button:hover {
+    background-color: #64ffda;
+    color: #1e1e1e;
+    cursor: pointer;
+}
+
 /* Nav bar ends */
 
 /* Social media section starts */
@@ -105,25 +123,27 @@ header nav a:hover {
 .socials ul {
     list-style: none;
     padding: 1rem;
-    line-height: 2.5rem;
+    line-height: 2.8rem;
     margin-bottom: 35px;
 }
 
 .socials img {
     width: 2rem;
-    transition: all 0.2s ease-in-out;
 }
 
 #gitHub:hover {
     cursor: pointer;
     content: url(./images/socials/github_green.png);
     width: 2rem;
+    margin-top: -5px;
+    margin-bottom: 5px;
 }
 
 #linkedIn:hover {
     cursor: pointer;
     content: url(./images/socials/linkedin_green.png);
     width: 2rem;
+    margin-bottom: 5px;
 }
 
 .verticalLine {
@@ -210,7 +230,6 @@ main {
 
 #aboutSection {
     color: #FAF9F6;
-    height: 40rem;
 }
 
 #aboutContainer {
@@ -220,7 +239,7 @@ main {
 
 #aboutMeText {
     letter-spacing: 0.01rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
 }
 
 #profilePicContainer {
@@ -231,7 +250,7 @@ main {
     overflow: hidden;
     background: #64ffda;
     justify-self: center;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 #profilePic {
@@ -247,28 +266,69 @@ main {
     mix-blend-mode: normal;
 }
 
+#aboutSection button {
+    width: 10rem;
+    height: 3rem;
+    border: #64ffda 0.1rem solid;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #64ffda;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    transition: all 0.2s ease-in-out;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+}
+
+#aboutSection button:hover {
+    background-color: #64ffda;
+    color: #1e1e1e;
+    cursor: pointer;
+}
+
 /* About section ends */
 
 /* Skills section starts */
 
 #skillsSection {
     color: #FAF9F6;
-    height: 40rem;
+    margin-top: 8rem;
 }
 
-#skillsContainer {
-    grid-column: 7 / span 6;
+#techSkillsContainer {
+    grid-column: 1 / span 6;
 }
 
-.skillIcons {
+.techSkillsIcons {
     display: flex;
     justify-content: space-between;
     margin-right: 5rem;
     margin-bottom: 3rem;
 }
 
-.skillIcons img {
+.techSkillsIcons img {
     height: 3rem;
+}
+
+#softSkillsContainer {
+    grid-column: 7 / span 6;
+    margin-top: 9rem;
+}
+
+.softSkillsCard {
+    display: inline-flex;
+    width: 35%;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    background: #faf9f616;
+    border-radius: 5px;
+}
+
+.softSkillsCard:hover {
+    border: #64ffda solid 0.15rem;
+    opacity: 80%;
+    transition: all 0.5s ease-in-out;
 }
 
 /* Skills section ends */
@@ -278,11 +338,12 @@ main {
 #projectsSection {
     color: #FAF9F6;
     margin-right: 5rem;
-    margin-bottom: 10rem;
+    margin-top: 8rem;
 }
 
 #projectsSection h2 {
     grid-column: span 12;
+    margin-bottom: 5rem;
 }
 
 #rodWeatherImgContainer {
@@ -291,6 +352,10 @@ main {
 
 #rodWeatherImgContainer img {
     width: 75%;
+}
+
+#rodWeatherImgContainer img:hover {
+    opacity: 80%;
 }
 
 #rodWeatherDescContainer {
@@ -302,15 +367,50 @@ main {
     width: 40%
 }
 
+#rodWeatherDescContainer img:hover {
+    opacity: 80%;
+}
+
 .projSkills {
     font-size: 0.8rem;
+}
+
+.projLinkIcons {
+    margin-top: 1rem;
+    text-decoration-style: none;
+}
+
+.projLinkIcons a:link,
+.projLinkIcons a:visited,
+.projLinkIcons a:active {
+    color: #FAF9F6;
+}
+
+.fa-arrow-up-right-from-square {
+    font-size: 1.5rem;
+}
+
+.fa-github-alt {
+    font-size: 1.8rem;
+}
+
+.fa-arrow-up-right-from-square:hover {
+    color: #64ffda;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.fa-github-alt:hover {
+    color: #64ffda;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 #rodFlixDescContainer {
     grid-column: 1 / span 6;
     text-align: right;
-    margin-top: 8rem;
     align-self: center;
+    margin-top: 8rem;
 }
 
 #rodFlixDescContainer img {
@@ -318,6 +418,9 @@ main {
     margin-top: -1.5rem;
 }
 
+#rodFlixDescContainer img:hover {
+    opacity: 80%;
+}
 
 #rodFlixImgContainer {
     grid-column: 7 / span 6;
@@ -330,6 +433,10 @@ main {
     float: right;
 }
 
+#rodFlixImgContainer img:hover {
+    opacity: 80%;
+}
+
 
 /* Projects section ends */
 
@@ -337,6 +444,7 @@ main {
 
 #contactSection {
     margin-right: 5rem;
+    margin-top: 8rem;
 }
 
 #contactSection h2 {
@@ -435,11 +543,8 @@ input[type="button"].btnBlock {
 /* Footer secion starts */
 
 footer {
-    /* border-top: #FAF9F6 solid 2px; */
     margin-top: 10rem;
-    /* background: #1e1e1e; */
     width: 100%;
-    z-index: 8;
     position: absolute;
 }
 
