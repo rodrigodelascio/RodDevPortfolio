@@ -18,12 +18,12 @@
     <header class="grid">
         <a href="#"><img src="./images/logo/rodLogoWhite.png" alt="Homepage | Rodrigo de Lascio" id="logo"></a>
         <nav>
-            <ul>
-                <a href="#aboutSection">about</a>
-                <a href="#skillsSection">skills</a>
-                <a href="#projectsSection">projects</a>
-                <a href="#contactSection">contact</a>
-                <a href="#">
+            <ul id="myNavLinks">
+                <a href="#aboutSection" class="myLink">about</a>
+                <a href="#skillsSection" class="myLink">skills</a>
+                <a href="#projectsSection" class="myLink">projects</a>
+                <a href="#contactSection" class="myLink">contact</a>
+                <a href="./files/cvRodrigoDeLascio.pdf" download="cvRodrigoDeLascio">
                     <button>download my cv</button>
                 </a>
             </ul>
@@ -34,7 +34,7 @@
     <div class="socials">
         <ul>
             <li>
-                <a href="https://www.linkedin.com/in/rodrigo-de-lascio-1a5330a1/" target="_blank"
+                <a href="https://www.linkedin.com/in/rodrigo-de-lascio/" target="_blank"
                     rel="noopener noreferrer" id="linkedIn"><img src="./images/socials/linkedin_white.png"
                         alt="LinkedIn"></a>
             </li>
@@ -51,7 +51,7 @@
     <main>
 
         <!-- Main landing secion -->
-        <div id="mainLanding">
+        <div id="mainLanding" class="sectionDetect">
             <p>Hello, my name is</p>
             <h1>Rodrigo de Lascio</h1>
             <h2>Software Developer</h2>
@@ -72,7 +72,7 @@
         </div>
 
         <!-- About Me and Skills container -->
-        <div id="aboutSection" class="grid anchor">
+        <div id="aboutSection" class="grid anchor sectionDetect">
 
             <!-- About section -->
             <div id="aboutContainer">
@@ -96,7 +96,7 @@
                     <button>contact me</button>
                 </a>
 
-                <a href="#">
+                <a href="./files/cvRodrigoDeLascio.pdf" download="cvRodrigoDeLascio">
                     <button>download my cv</button>
                 </a>
 
@@ -109,46 +109,20 @@
         </div>
 
         <!-- Skills section -->
-        <div id="skillsSection" class="grid anchor">
+        <div id="skillsSection" class="grid anchor sectionDetect">
 
             <div id="techSkillsContainer">
                 <h2>&#60;skills /&#62;</h2>
 
                 <div class="techSkillsIcons">
-                    <img src="./images/skills/html5.png" alt="">
-                    <img src="./images/skills/css3.png" alt="">
-                    <img src="./images/skills/javascript.png" alt="">
-                </div>
-
-                <div class="techSkillsIcons">
-                    <img src="./images/skills/python.png" alt="">
-                    <img src="./images/skills/mysql.png" alt="">
-                    <img src="./images/skills/mongodb.png" alt="">
-                </div>
-            </div>
-
-            <div id="softSkillsContainer">
-                <div class="softSkillsCard">
-                    one
-                </div>
-
-                <div class="softSkillsCard">
-                    two
-                </div>
-
-                <div class="softSkillsCard">
-                    three
-                </div>
-
-                <div class="softSkillsCard">
-                    four
+                    <img src="./images/skills/skillsInfographic.png" alt="">
                 </div>
             </div>
 
         </div>
 
         <!-- My projects section -->
-        <div id="projectsSection" class="grid anchor">
+        <div id="projectsSection" class="grid anchor sectionDetect">
 
             <h2>&#60;projects /&#62;</h2>
 
@@ -189,7 +163,49 @@
 
             </div>
 
+            <!-- RodKrypto Project -->
+
+            <div id="rodKryptoDescContainer">
+
+                <p style="color: #64ffda;">Featured Project</p>
+
+                <a href="https://rodkrypto.rodrigodelascio.tech" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/mockups/rodKryptoWhite.png" alt=""></a>
+
+                <p>
+                    A cryptocurrency app built pulling data from different APIs, featuring the <span style="color: #64ffda;">top 10 cryptocurrencies price list</span>, in real time, displayed in GBP.
+                </p>
+
+
+                <p style="color: #64ffda;" class="projSkills">
+                    HTML5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CoinPaprika
+                    API&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CoinGecko API&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ExchangeRate API
+                </p>
+
+                <p class="projLinkIcons">
+                    <a href="https://github.com/rodrigodelascio/RodKrypto" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-github-alt"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://rodkrypto.rodrigodelascio.tech" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </p>
+
+            </div>
+
+            <div id="rodKryptoImgContainer">
+
+                <a href="https://rodkrypto.rodrigodelascio.tech" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/mockups/rodKryptoMockup.png" alt=""></a>
+
+            </div>
+
+
             <!-- RodFlix Project -->
+
+            <div id="rodFlixImgContainer">
+
+                <a href="html/rodFlix.html" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/mockups/rodFlixMockup.png" alt=""></a>
+
+            </div>
 
             <div id="rodFlixDescContainer">
 
@@ -216,27 +232,18 @@
 
             </div>
 
-            <div id="rodFlixImgContainer">
-
-                <a href="html/rodFlix.html" target="_blank" rel="noopener noreferrer"><img
-                        src="./images/mockups/rodFlix.png" alt=""></a>
-
-            </div>
-
-
-
         </div>
 
         <!-- Contact section -->
 
-        <div id="formBackground">
+        <div id="formBackground" class="sectionDetect">
 
             <div id="contactSection" class="grid anchor">
 
                 <h2>&#60;contact /&#62;</h2>
 
                 <!-- Contact form -->
-                <form id="contactForm" class="formClass" method="post" action="" autocomplete="off">
+                <form id="contactForm" class="formClass" method="post" action="https://formspree.io/f/xrgdwego" autocomplete="off">
 
                     <div class="formGroup">
                         <label for="Name" class="inpLabel">Name</label>
@@ -285,6 +292,7 @@
     </footer>
 
     <!-- End -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <script src="./script.js"></script>
 </body>
 

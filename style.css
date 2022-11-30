@@ -91,6 +91,8 @@ header nav a:hover {
     text-underline-offset: 0.8rem;
 }
 
+
+
 header button {
     width: 8rem;
     height: 2.5rem;
@@ -212,6 +214,12 @@ main {
     cursor: pointer;
 }
 
+#mainLanding a:link,
+#mainLanding a:visited,
+#mainLanding a:active {
+    color: #1e1e1e;
+}
+
 /* scrolldown icon starts */
 
 .fa-angle-down {
@@ -286,49 +294,28 @@ main {
     cursor: pointer;
 }
 
+#aboutSection a:link,
+#aboutSection a:visited,
+#aboutSection a:active {
+    color: #1e1e1e;
+}
+
 /* About section ends */
 
 /* Skills section starts */
 
 #skillsSection {
     color: #FAF9F6;
-    margin-top: 8rem;
+    margin-top: 12rem;
 }
 
 #techSkillsContainer {
-    grid-column: 1 / span 6;
-}
-
-.techSkillsIcons {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 5rem;
-    margin-bottom: 3rem;
+    grid-column: 1 / span 12;
 }
 
 .techSkillsIcons img {
-    height: 3rem;
-}
-
-#softSkillsContainer {
-    grid-column: 7 / span 6;
-    margin-top: 9rem;
-}
-
-.softSkillsCard {
-    display: inline-flex;
-    width: 35%;
-    height: 200px;
-    margin: 10px;
-    padding: 10px;
-    background: #faf9f616;
-    border-radius: 5px;
-}
-
-.softSkillsCard:hover {
-    border: #64ffda solid 0.15rem;
-    opacity: 80%;
-    transition: all 0.5s ease-in-out;
+    width: 85%;
+    margin-top: 2rem;
 }
 
 /* Skills section ends */
@@ -338,7 +325,7 @@ main {
 #projectsSection {
     color: #FAF9F6;
     margin-right: 5rem;
-    margin-top: 8rem;
+    margin-top: 12rem;
 }
 
 #projectsSection h2 {
@@ -406,16 +393,45 @@ main {
     transition: all 0.5s ease-in-out;
 }
 
-#rodFlixDescContainer {
+#rodKryptoDescContainer {
     grid-column: 1 / span 6;
     text-align: right;
     align-self: center;
     margin-top: 8rem;
 }
 
+#rodKryptoDescContainer img {
+    width: 40%;
+    margin-top: -2rem;
+}
+
+#rodKryptoDescContainer img:hover {
+    opacity: 80%;
+}
+
+#rodKryptoImgContainer {
+    grid-column: 7 / span 6;
+    margin-top: 8rem;
+}
+
+#rodKryptoImgContainer img {
+    width: 75%;
+    display: flex;
+    float: right;
+}
+
+#rodKryptoImgContainer img:hover {
+    opacity: 80%;
+}
+
+#rodFlixDescContainer {
+    grid-column: 7 / span 6;
+    align-self: center;
+    margin-top: 8rem;
+}
+
 #rodFlixDescContainer img {
     width: 25%;
-    margin-top: -1.5rem;
 }
 
 #rodFlixDescContainer img:hover {
@@ -423,14 +439,12 @@ main {
 }
 
 #rodFlixImgContainer {
-    grid-column: 7 / span 6;
+    grid-column: 1 / span 6;
     margin-top: 8rem;
 }
 
 #rodFlixImgContainer img {
     width: 75%;
-    display: flex;
-    float: right;
 }
 
 #rodFlixImgContainer img:hover {
@@ -444,7 +458,7 @@ main {
 
 #contactSection {
     margin-right: 5rem;
-    margin-top: 8rem;
+    margin-top: 10rem;
 }
 
 #contactSection h2 {
