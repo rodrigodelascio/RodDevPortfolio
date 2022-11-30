@@ -1,5 +1,8 @@
 const scrollIcon = document.getElementById("scrollIcon")
 
+
+// Scroll icon to hide
+
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 100) {
         scrollIcon.style.visibility = "hidden"
@@ -7,3 +10,4 @@ window.addEventListener('scroll', () => {
         scrollIcon.style.visibility = "visible"
     }
 })
+
