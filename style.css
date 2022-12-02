@@ -1,45 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* Document formatting start */
 
 html {
-    font-size: 15px;
-    scroll-behavior: smooth;
+  font-size: 15px;
+  scroll-behavior: smooth;
 }
 
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 h3 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 footer {
-    font-size: 0.85rem;
+  font-size: 0.85rem;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0.75rem;
 }
 
 .anchor {
-    scroll-margin-top: 5rem;
+  scroll-margin-top: 5rem;
 }
 
 body {
-    margin-top: 0.7rem;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #1e1e1e;
+  margin-top: 0.7rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #1e1e1e;
 }
 
 /* Document formatting end */
@@ -47,66 +47,65 @@ body {
 /* Nav bar starts */
 
 header {
-    padding: 1rem;
-    align-items: center;
-    border-bottom: #FAF9F6 solid 2px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    overflow: hidden;
-    background-color: #1e1e1e;
-    z-index: 9;
+  padding: 1rem;
+  align-items: center;
+  border-bottom: #faf9f6 solid 2px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  z-index: 9;
 }
 
 #logo {
-    grid-column: 1 / span 2;
-    width: 3rem;
-    margin-left: 5rem;
+  grid-column: 1 / span 2;
+  width: 3rem;
+  margin-left: 5rem;
 }
 
 #logo:hover {
-    cursor: pointer;
-    content: url(./images/logo/rodLogoGreen.png);
-    width: 3rem;
+  cursor: pointer;
+  content: url(./images/logo/rodLogoGreen.png);
+  width: 3rem;
 }
 
-
 header nav {
-    grid-column: 3 / span 10;
-    justify-self: right;
-    margin-right: 5rem;
+  grid-column: 3 / span 10;
+  justify-self: right;
+  margin-right: 5rem;
 }
 
 header nav a {
-    text-decoration: none;
-    color: #FAF9F6;
-    margin-left: 2.5rem;
-    font-size: 1.3rem;
+  text-decoration: none;
+  color: #faf9f6;
+  margin-left: 2.5rem;
+  font-size: 1.3rem;
 }
 
 header nav a:hover {
-    color: #64ffda;
-    text-decoration: underline;
-    text-decoration-thickness: 0.3rem;
-    text-underline-offset: 0.8rem;
+  color: #64ffda;
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
+  text-underline-offset: 0.8rem;
 }
 
 header button {
-    width: 8rem;
-    height: 2.5rem;
-    border: #64ffda 0.1rem solid;
-    border-radius: 5px;
-    background-color: #1e1e1e;
-    color: #64ffda;
-    font-size: 0.8rem;
-    letter-spacing: 0.05rem;
-    transition: all 0.2s ease-in-out;
+  width: 8rem;
+  height: 2.5rem;
+  border: #64ffda 0.1rem solid;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #64ffda;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  transition: all 0.2s ease-in-out;
 }
 
 header button:hover {
-    background-color: #64ffda;
-    color: #1e1e1e;
-    cursor: pointer;
+  background-color: #64ffda;
+  color: #1e1e1e;
+  cursor: pointer;
 }
 
 /* Nav bar ends */
@@ -114,44 +113,44 @@ header button:hover {
 /* Social media section starts */
 
 .socials {
-    position: fixed;
-    margin-left: 10px;
-    bottom: 120px;
-    z-index: 2;
+  position: fixed;
+  margin-left: 10px;
+  bottom: 120px;
+  z-index: 2;
 }
 
 .socials ul {
-    list-style: none;
-    padding: 1rem;
-    line-height: 2.8rem;
-    margin-bottom: 35px;
+  list-style: none;
+  padding: 1rem;
+  line-height: 2.8rem;
+  margin-bottom: 35px;
 }
 
 .socials img {
-    width: 2rem;
+  width: 2rem;
 }
 
 #gitHub:hover {
-    cursor: pointer;
-    content: url(./images/socials/github_green.png);
-    width: 2rem;
-    margin-top: -5px;
-    margin-bottom: 5px;
+  cursor: pointer;
+  content: url(./images/socials/github_green.png);
+  width: 2rem;
+  margin-top: -5px;
+  margin-bottom: 5px;
 }
 
 #linkedIn:hover {
-    cursor: pointer;
-    content: url(./images/socials/linkedin_green.png);
-    width: 2rem;
-    margin-bottom: 5px;
+  cursor: pointer;
+  content: url(./images/socials/linkedin_green.png);
+  width: 2rem;
+  margin-bottom: 5px;
 }
 
 .verticalLine {
-    border-left: 0.1rem solid #FAF9F6;
-    height: 200px;
-    position: absolute;
-    bottom: -150px;
-    left: 29px;
+  border-left: 0.1rem solid #faf9f6;
+  height: 200px;
+  position: absolute;
+  bottom: -150px;
+  left: 29px;
 }
 
 /* Social media section ends */
@@ -159,143 +158,143 @@ header button:hover {
 /* Main landing starts */
 
 main {
-    padding: 1.5rem;
-    margin-left: 12vw;
-    margin-top: 12vh;
+  padding: 1.5rem;
+  margin-left: 12vw;
+  margin-top: 12vh;
 }
 
 #mainLanding {
-    height: 100vh;
-    margin-bottom: -20vh;
+  height: 100vh;
+  margin-bottom: -20vh;
 }
 
 #mainLanding p {
-    color: #64ffda;
-    margin-top: 15vh;
+  color: #64ffda;
+  margin-top: 15vh;
 }
 
 #mainLanding h1 {
-    color: #FAF9F6;
-    text-decoration: underline;
-    text-decoration-color: #64ffda;
-    text-decoration-thickness: 1rem;
-    text-underline-offset: 0.7rem;
-    margin-top: -1rem;
+  color: #faf9f6;
+  text-decoration: underline;
+  text-decoration-color: #64ffda;
+  text-decoration-thickness: 1rem;
+  text-underline-offset: 0.7rem;
+  margin-top: -1rem;
 }
 
 #mainLanding h2 {
-    color: #FAF9F6;
-    margin-top: -2rem;
-    opacity: 100%;
+  color: #faf9f6;
+  margin-top: -2rem;
+  opacity: 100%;
 }
 
 #mainLanding h3 {
-    color: #FAF9F6;
+  color: #faf9f6;
 }
 
 #mainLanding button {
-    width: 10rem;
-    height: 3rem;
-    border: #64ffda 0.1rem solid;
-    border-radius: 5px;
-    background-color: #1e1e1e;
-    color: #64ffda;
-    font-size: 0.8rem;
-    letter-spacing: 0.05rem;
-    transition: all 0.2s ease-in-out;
-    margin-right: 1rem;
+  width: 10rem;
+  height: 3rem;
+  border: #64ffda 0.1rem solid;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #64ffda;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  transition: all 0.2s ease-in-out;
+  margin-right: 1rem;
 }
 
 #mainLanding button:hover {
-    background-color: #64ffda;
-    color: #1e1e1e;
-    cursor: pointer;
+  background-color: #64ffda;
+  color: #1e1e1e;
+  cursor: pointer;
 }
 
 #mainLanding a:link,
 #mainLanding a:visited,
 #mainLanding a:active {
-    color: #1e1e1e;
+  color: #1e1e1e;
 }
 
-/* scrolldown icon starts */
+/* scroll down icon starts */
 
 .fa-angle-down {
-    position: absolute;
-    right: 50%;
-    bottom: 1rem;
-    font-size: 1.5rem;
-    color: #64ffda;
+  position: absolute;
+  right: 50%;
+  bottom: 1rem;
+  font-size: 1.5rem;
+  color: #64ffda;
 }
 
-/* scrolldown icon ends */
+/* scroll down icon ends */
 
 /* Main landing ends */
 
 /* About section starts */
 
 #aboutSection {
-    color: #FAF9F6;
+  color: #faf9f6;
 }
 
 #aboutContainer {
-    grid-column: 1 / span 6;
-    margin-right: 3rem;
+  grid-column: 1 / span 6;
+  margin-right: 3rem;
 }
 
 #aboutMeText {
-    letter-spacing: 0.01rem;
-    line-height: 2rem;
+  letter-spacing: 0.01rem;
+  line-height: 2rem;
 }
 
 #profilePicContainer {
-    grid-column: 7 / span 6;
-    height: 20rem;
-    width: 20rem;
-    border-radius: 50%;
-    overflow: hidden;
-    background: #64ffda;
-    justify-self: center;
-    margin-top: 10rem;
+  grid-column: 7 / span 6;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #64ffda;
+  justify-self: center;
+  margin-top: 10rem;
 }
 
 #profilePic {
-    height: 100%;
-    width: 100%;
-    transform: scaleX(-1);
-    object-fit: contain;
-    opacity: 100%;
-    mix-blend-mode: multiply;
+  height: 100%;
+  width: 100%;
+  transform: scaleX(-1);
+  object-fit: contain;
+  opacity: 100%;
+  mix-blend-mode: multiply;
 }
 
 #profilePic:hover {
-    mix-blend-mode: normal;
+  mix-blend-mode: normal;
 }
 
 #aboutSection button {
-    width: 10rem;
-    height: 3rem;
-    border: #64ffda 0.1rem solid;
-    border-radius: 5px;
-    background-color: #1e1e1e;
-    color: #64ffda;
-    font-size: 0.8rem;
-    letter-spacing: 0.05rem;
-    transition: all 0.2s ease-in-out;
-    margin-right: 1rem;
-    margin-top: 1.5rem;
+  width: 10rem;
+  height: 3rem;
+  border: #64ffda 0.1rem solid;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #64ffda;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  transition: all 0.2s ease-in-out;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
 }
 
 #aboutSection button:hover {
-    background-color: #64ffda;
-    color: #1e1e1e;
-    cursor: pointer;
+  background-color: #64ffda;
+  color: #1e1e1e;
+  cursor: pointer;
 }
 
 #aboutSection a:link,
 #aboutSection a:visited,
 #aboutSection a:active {
-    color: #1e1e1e;
+  color: #1e1e1e;
 }
 
 /* About section ends */
@@ -303,17 +302,17 @@ main {
 /* Skills section starts */
 
 #skillsSection {
-    color: #FAF9F6;
-    margin-top: 12rem;
+  color: #faf9f6;
+  margin-top: 12rem;
 }
 
 #techSkillsContainer {
-    grid-column: 1 / span 12;
+  grid-column: 1 / span 12;
 }
 
 .techSkillsIcons img {
-    width: 85%;
-    margin-top: 2rem;
+  width: 85%;
+  margin-top: 2rem;
 }
 
 /* Skills section ends */
@@ -321,472 +320,594 @@ main {
 /* Projects section starts */
 
 #projectsSection {
-    color: #FAF9F6;
-    margin-right: 5rem;
-    margin-top: 12rem;
+  color: #faf9f6;
+  margin-right: 5rem;
+  margin-top: 12rem;
 }
 
 #projectsSection h2 {
-    grid-column: span 12;
-    margin-bottom: 5rem;
+  grid-column: span 12;
+  margin-bottom: 5rem;
 }
 
 #rodWeatherImgContainer {
-    grid-column: 1 / span 6;
+  grid-column: 1 / span 6;
 }
 
 #rodWeatherImgContainer img {
-    width: 75%;
+  width: 75%;
 }
 
 #rodWeatherImgContainer img:hover {
-    opacity: 80%;
+  opacity: 80%;
 }
 
 #rodWeatherDescContainer {
-    grid-column: 7 / span 6;
-    align-self: center;
+  grid-column: 7 / span 6;
+  align-self: center;
 }
 
 #rodWeatherDescContainer img {
-    width: 40%
+  width: 40%;
 }
 
 #rodWeatherDescContainer img:hover {
-    opacity: 80%;
+  opacity: 80%;
 }
 
 .projSkills {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .projLinkIcons {
-    margin-top: 1rem;
-    text-decoration-style: none;
+  margin-top: 1rem;
+  text-decoration-style: none;
 }
 
 .projLinkIcons a:link,
 .projLinkIcons a:visited,
 .projLinkIcons a:active {
-    color: #FAF9F6;
+  color: #faf9f6;
 }
 
 .fa-arrow-up-right-from-square {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .fa-github-alt {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .fa-arrow-up-right-from-square:hover {
-    color: #64ffda;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+  color: #64ffda;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .fa-github-alt:hover {
-    color: #64ffda;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+  color: #64ffda;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 #rodKryptoDescContainer {
-    grid-column: 1 / span 6;
-    text-align: right;
-    align-self: center;
-    margin-top: 8rem;
+  grid-column: 1 / span 6;
+  text-align: right;
+  align-self: center;
+  margin-top: 8rem;
 }
 
 #rodKryptoDescContainer img {
-    width: 40%;
-    margin-top: -2rem;
+  width: 40%;
+  margin-top: -2rem;
 }
 
 #rodKryptoDescContainer img:hover {
-    opacity: 80%;
+  opacity: 80%;
 }
 
 #rodKryptoImgContainer {
-    grid-column: 7 / span 6;
-    margin-top: 8rem;
+  grid-column: 7 / span 6;
+  margin-top: 8rem;
 }
 
 #rodKryptoImgContainer img {
-    width: 75%;
-    display: flex;
-    float: right;
+  width: 75%;
+  display: flex;
+  float: right;
 }
 
 #rodKryptoImgContainer img:hover {
-    opacity: 80%;
+  opacity: 80%;
 }
 
 #rodFlixDescContainer {
-    grid-column: 7 / span 6;
-    align-self: center;
-    margin-top: 8rem;
+  grid-column: 7 / span 6;
+  align-self: center;
+  margin-top: 8rem;
 }
 
 #rodFlixDescContainer img {
-    width: 25%;
+  width: 25%;
 }
 
 #rodFlixDescContainer img:hover {
-    opacity: 80%;
+  opacity: 80%;
 }
 
 #rodFlixImgContainer {
-    grid-column: 1 / span 6;
-    margin-top: 8rem;
+  grid-column: 1 / span 6;
+  margin-top: 8rem;
 }
 
 #rodFlixImgContainer img {
-    width: 75%;
+  width: 75%;
 }
 
 #rodFlixImgContainer img:hover {
-    opacity: 80%;
+  opacity: 80%;
 }
-
 
 /* Projects section ends */
 
 /* Contact section starts */
 
 #contactSection {
-    margin-right: 5rem;
-    margin-top: 10rem;
+  margin-right: 5rem;
+  margin-top: 10rem;
 }
 
 #contactSection h2 {
-    grid-column: 1 / span 12;
-    color: #FAF9F6;
-    justify-self: center;
+  grid-column: 1 / span 12;
+  color: #faf9f6;
+  justify-self: center;
 }
 
 /* Contact form starts */
 
 #contactForm {
-    grid-column: 4 / span 6;
-    background: #faf9f616;
-    padding: 20px;
-    border-radius: 5px;
+  grid-column: 4 / span 6;
+  background: #faf9f616;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .formGroup {
-    color: #FAF9F6;
+  color: #faf9f6;
 }
 
 .inpGroup {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
 }
 
 .formControl {
-    display: block;
-    width: 100%;
-    height: calc(1.5em + 0.75rem + 2px);
-    padding: 0.3rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #1e1e1e;
-    background-color: #FAF9F6;
-    background-clip: padding-box;
-    outline: none;
-    border-radius: 5px;
-    transition: border-color 0.15s ease-in-out
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.3rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1e1e1e;
+  background-color: #faf9f6;
+  background-clip: padding-box;
+  outline: none;
+  border-radius: 5px;
+  transition: border-color 0.15s ease-in-out;
 }
 
 .formControl:focus {
-    border-bottom: 4px solid #64ffda;
-    border-right: 4px solid #64ffda;
+  border-bottom: 4px solid #64ffda;
+  border-right: 4px solid #64ffda;
 }
 
 textarea.formControl {
-    height: auto;
+  height: auto;
 }
 
 label.inpLabel {
-    display: inline-block;
-    margin-bottom: 0.1rem;
-    margin-top: 0.4rem;
+  display: inline-block;
+  margin-bottom: 0.1rem;
+  margin-top: 0.4rem;
 }
 
 #messageArea {
-    resize: none;
+  resize: none;
 }
 
 .btnBlock {
-    display: block;
-    width: 40%;
-    margin-left: 60%;
+  display: block;
+  width: 40%;
+  margin-left: 60%;
 }
 
 #formButton {
-    margin-top: 2rem;
-    height: 3rem;
-    border: #64ffda 0.1rem solid;
-    border-radius: 5px;
-    background-color: #1e1e1e;
-    color: #64ffda;
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    transition: all 0.2s ease-in-out;
+  margin-top: 2rem;
+  height: 3rem;
+  border: #64ffda 0.1rem solid;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #64ffda;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s ease-in-out;
 }
 
 #formButton:hover {
-    background-color: #64ffda;
-    color: #1e1e1e;
-    cursor: pointer;
+  background-color: #64ffda;
+  color: #1e1e1e;
+  cursor: pointer;
 }
 
 input[type="submit"].btnBlock,
 input[type="reset"].btnBlock,
 input[type="button"].btnBlock {
-    width: 100%;
+  width: 100%;
 }
 
 /* Contact form ends */
 
-/* Footer secion starts */
+/* Footer section starts */
 
 footer {
-    margin-top: 10rem;
-    width: 100%;
-    position: absolute;
+  margin-top: 10rem;
+  width: 100%;
+  position: absolute;
 }
 
 #copyright {
-    grid-column: 1 / span 12;
-    color: #FAF9F6;
-    padding: 0.8rem;
-    justify-self: center;
+  grid-column: 1 / span 12;
+  color: #faf9f6;
+  padding: 0.8rem;
+  justify-self: center;
 }
 
 #supermanIcon {
-    grid-column: 1 / span 12;
-    justify-self: center;
-    margin-bottom: 3rem;
+  grid-column: 1 / span 12;
+  justify-self: center;
+  margin-bottom: 3rem;
 }
 
 #supermanIcon img {
-    height: 4rem;
+  height: 4rem;
 }
 
 #supermanIcon:hover {
-    cursor: pointer;
-    opacity: 70%;
+  cursor: pointer;
+  opacity: 70%;
 }
 
 #upAndAway {
-    color: #FAF9F6;
-    font-size: 0.6rem;
+  color: #faf9f6;
+  font-size: 0.6rem;
 }
 
 #upAndAway {
-    visibility: hidden;
-    white-space: nowrap;
-    position: absolute;
-    transform: translateX(-47.4%);
-    left: 50%;
-    bottom: 17%;
-    opacity: 0;
-    transition: opacity 1s ease;
+  visibility: hidden;
+  white-space: nowrap;
+  position: absolute;
+  transform: translateX(-47.4%);
+  left: 50%;
+  bottom: 17%;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
-#supermanIcon:hover>#upAndAway {
-    visibility: visible;
-    opacity: 1;
+#supermanIcon:hover > #upAndAway {
+  visibility: visible;
+  opacity: 1;
 }
 
-/* Footer secion ends */
+/* Footer section ends */
 
 /* Media Query starts */
 
 @media (max-width: 1100px) {
-    #contactForm {
-        grid-column: 3 / span 8;
-    }
+  #contactForm {
+    grid-column: 3 / span 8;
+  }
 }
 
 @media (max-width: 930px) {
-    header nav a {
-        margin-left: 2rem;
-        font-size: 1rem;
-    }
+  header nav a {
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
 
-    header button {
-        width: 6rem;
-        font-size: 0.69rem;
-        letter-spacing: 0rem;
-    }
+  header button {
+    width: 6rem;
+    font-size: 0.69rem;
+    letter-spacing: 0rem;
+  }
 
-    #aboutSection button {
-        width: 7rem;
-        font-size: 0.8rem;
-        letter-spacing: 0rem;
-        margin-right: 1rem;
-    }
+  #aboutSection button {
+    width: 7rem;
+    font-size: 0.8rem;
+    letter-spacing: 0rem;
+    margin-right: 1rem;
+  }
 
-    #aboutContainer {
-        grid-column: 1 / span 7;
-        margin-right: 2rem;
-    }
+  #aboutContainer {
+    grid-column: 1 / span 7;
+    margin-right: 2rem;
+  }
 
-    #aboutMeText {
-        letter-spacing: 0rem;
-        line-height: 2rem;
-        font-size: 0.8rem;
-    }
-    
-    #profilePicContainer {
-        grid-column: 8 / span 4;
-        height: 15rem;
-        width: 15rem;
-    }
+  #aboutMeText {
+    letter-spacing: 0rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
+  }
 
-    .fa-arrow-up-right-from-square {
-        font-size: 1.2rem;
-    }
-    
-    .fa-github-alt {
-        font-size: 1.5rem;
-    }
+  #profilePicContainer {
+    grid-column: 8 / span 4;
+    height: 15rem;
+    width: 15rem;
+  }
 
-    #projectsSection {
-        font-size: 80%;
-    }
+  .fa-arrow-up-right-from-square {
+    font-size: 1.2rem;
+  }
+
+  .fa-github-alt {
+    font-size: 1.5rem;
+  }
+
+  #projectsSection {
+    font-size: 80%;
+  }
 }
 
 @media (max-width: 850px) {
-    #projectsSection {
-        font-size: 70%;
-    }
+  #projectsSection {
+    font-size: 70%;
+  }
 }
 
 @media (max-width: 800px) {
+  header button {
+    display: none;
+  }
 
-    header button {
-        display: none;
-    }
+  #aboutContainer {
+    grid-column: 1 / span 12;
+    margin-right: 1rem;
+  }
 
-    #aboutContainer {
-        grid-column: 1 / span 12;
-        margin-right: 1rem;
-    }
-    
-    #profilePicContainer {
-        grid-column: 1 / span 12;
-        height: 20rem;
-        width: 20rem;
-        margin-top: 50px;
-    }
+  #profilePicContainer {
+    grid-column: 1 / span 12;
+    height: 20rem;
+    width: 20rem;
+    margin-top: 50px;
+  }
 
-    #projectsSection {
-        font-size: 65%;
-    }
+  #projectsSection {
+    font-size: 65%;
+  }
 }
 
 @media (max-width: 770px) {
-    #contactForm {
-        grid-column: 2 / span 11;
-    }
+  #contactForm {
+    grid-column: 2 / span 11;
+  }
 
-    #projectsSection {
-        font-size: 100%;
-    }
+  #projectsSection {
+    font-size: 100%;
+  }
 
-    #rodWeatherImgContainer {
-        grid-column: 2 / span 11;
-    }
-    
-    #rodWeatherImgContainer img {
-        width: 100%;
-    }
-    
-    #rodWeatherDescContainer {
-        grid-column: 1 / span 12;
-        margin-top: 50px;
-        border-bottom: 0.1rem solid #64ffda;
-        padding-bottom: 8rem;
-    }
-        
-    .fa-arrow-up-right-from-square {
-        font-size: 1.5rem;
-    }
-    
-    .fa-github-alt {
-        font-size: 1.8rem;
-    }
+  #rodWeatherImgContainer {
+    grid-column: 2 / span 11;
+  }
 
-    #rodKryptoDescContainer {
-        grid-column: 1 / span 12;
-        text-align: left;
-        margin-top: 8rem;
-    }
-    
-    #rodKryptoDescContainer img {
-        width: 35%;
-        margin-top: 0rem;
-    }
-    
-    #rodKryptoImgContainer {
-        grid-column: 2 / span 11;
-        margin-top: 50px;
-        border-bottom: 0.1rem solid #64ffda;
-        padding-bottom: 8rem;
-    }
-    
-    #rodKryptoImgContainer img {
-        width: 100%;
-    }
-    
-    #rodFlixDescContainer {
-        grid-column: 1 / span 12;
-        margin-top: 50px;
-        border-bottom: 0.1rem solid #64ffda;
-        padding-bottom: 8rem;
-    }
-    
-    #rodFlixImgContainer {
-        grid-column: 2 / span 11;
-        margin-top: 8rem;
-    }
-    
-    #rodFlixImgContainer img {
-        width: 100%;
-    }
+  #rodWeatherImgContainer img {
+    width: 100%;
+  }
+
+  #rodWeatherDescContainer {
+    grid-column: 1 / span 12;
+    margin-top: 50px;
+    border-bottom: 0.1rem solid #64ffda;
+    padding-bottom: 8rem;
+  }
+
+  .fa-arrow-up-right-from-square {
+    font-size: 1.5rem;
+  }
+
+  .fa-github-alt {
+    font-size: 1.8rem;
+  }
+
+  #rodKryptoDescContainer {
+    grid-column: 1 / span 12;
+    text-align: left;
+    margin-top: 8rem;
+  }
+
+  #rodKryptoDescContainer img {
+    width: 35%;
+    margin-top: 0rem;
+  }
+
+  #rodKryptoImgContainer {
+    grid-column: 2 / span 11;
+    margin-top: 50px;
+    border-bottom: 0.1rem solid #64ffda;
+    padding-bottom: 8rem;
+  }
+
+  #rodKryptoImgContainer img {
+    width: 100%;
+  }
+
+  #rodFlixDescContainer {
+    grid-column: 1 / span 12;
+    margin-top: 50px;
+    border-bottom: 0.1rem solid #64ffda;
+    padding-bottom: 8rem;
+  }
+
+  #rodFlixImgContainer {
+    grid-column: 2 / span 11;
+    margin-top: 8rem;
+  }
+
+  #rodFlixImgContainer img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 655px) {
-    
-    header nav a {
-        margin-left: 1rem;
-        font-size: 1rem;
-    }
-    
-    #mainLanding h1 {
-        font-size: 3rem;
-        text-decoration-thickness: 0.6rem;
-        text-underline-offset: 0.7rem;
-    }
-    
-    #mainLanding h2 {
-        font-size: 2rem;
-        margin-top: -2rem;
-    }
-    
-    #mainLanding h3 {
-        font-size: 1.3rem;
-    }
+  header nav a {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+
+  #mainLanding h1 {
+    font-size: 3rem;
+    text-decoration-thickness: 0.6rem;
+    text-underline-offset: 0.7rem;
+  }
+
+  #mainLanding h2 {
+    font-size: 2rem;
+    margin-top: -2rem;
+  }
+
+  #mainLanding h3 {
+    font-size: 1.3rem;
+  }
 }
 
-/* @media (max-width: 560px) { */
+@media (max-width: 580px) {
+  .hamburger {
+    cursor: pointer;
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+  }
 
-    /* Media Query ends */
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+    background-color: #faf9f6;
+  }
 
-    /* End */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .myLink {
+    display: block;
+    margin: 16px 0;
+    /* visibility: hidden; */
+  }
+
+  #myNavLinks {
+    background-color: #1e1e1e;
+    position: fixed;
+    top: 5rem;
+    left: -100%;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  #myNavLinks.active {
+    left: -2.5rem;
+  }
+
+  header nav a:hover {
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.5rem;
+  }
+}
+
+@media (max-width: 510px) {
+  #mainLanding h1 {
+    font-size: 2rem;
+    text-decoration-thickness: 0.3rem;
+    text-underline-offset: 0.4rem;
+  }
+
+  #mainLanding h2 {
+    font-size: 1.3rem;
+    margin-top: -1rem;
+  }
+
+  #mainLanding h3 {
+    font-size: 1rem;
+  }
+
+  #mainLanding button {
+    width: 7rem;
+    font-size: 0.7rem;
+    letter-spacing: 0rem;
+    margin-right: 0.5rem;
+  }
+
+  #profilePicContainer {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  #contactForm {
+    grid-column: 1 / span 12;
+  }
+
+  #copyright {
+    font-size: 0.6rem;
+  }
+
+  #projectsSection {
+    margin-right: 1.5rem;
+  }
+
+  #contactSection {
+    margin-right: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  #aboutMeText {
+    line-height: 1.5rem;
+    font-size: 0.7rem;
+  }
+
+  #aboutSection button {
+    width: 6rem;
+    font-size: 0.6rem;
+    letter-spacing: 0rem;
+    margin-right: 0.5rem;
+  }
+
+  #formButton {
+    font-size: 1rem;
+    letter-spacing: 0rem;
+  }
+
+  #copyright {
+    font-size: 0.45rem;
+  }
+}
+
+/* Media Query ends */
+
+/* End */
